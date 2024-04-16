@@ -13,6 +13,7 @@
 		618C78842BCE2D650033CD0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618C78832BCE2D650033CD0D /* Preview Assets.xcassets */; };
 		618C788D2BCE2DAC0033CD0D /* PointAgreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C788C2BCE2DAC0033CD0D /* PointAgreeView.swift */; };
 		618C78912BCE39E60033CD0D /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C78902BCE39E60033CD0D /* QuizView.swift */; };
+		618C78932BCE3EA60033CD0D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C78922BCE3EA60033CD0D /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		618C78832BCE2D650033CD0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		618C788C2BCE2DAC0033CD0D /* PointAgreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointAgreeView.swift; sourceTree = "<group>"; };
 		618C78902BCE39E60033CD0D /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		618C78922BCE3EA60033CD0D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				618C787E2BCE2D630033CD0D /* ContentView.swift */,
 				618C788C2BCE2DAC0033CD0D /* PointAgreeView.swift */,
 				618C78902BCE39E60033CD0D /* QuizView.swift */,
+				618C78922BCE3EA60033CD0D /* MenuView.swift */,
 				618C78802BCE2D650033CD0D /* Assets.xcassets */,
 				618C78822BCE2D650033CD0D /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618C78932BCE3EA60033CD0D /* MenuView.swift in Sources */,
 				618C788D2BCE2DAC0033CD0D /* PointAgreeView.swift in Sources */,
 				618C78912BCE39E60033CD0D /* QuizView.swift in Sources */,
 				618C787F2BCE2D630033CD0D /* ContentView.swift in Sources */,
