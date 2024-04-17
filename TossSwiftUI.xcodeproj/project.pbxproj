@@ -61,12 +61,12 @@
 			children = (
 				618C787C2BCE2D630033CD0D /* TossSwiftUIApp.swift */,
 				618C787E2BCE2D630033CD0D /* ContentView.swift */,
+				618C789C2BD015C50033CD0D /* PointButtonModifier.swift */,
 				618C788C2BCE2DAC0033CD0D /* PointAgreeView.swift */,
 				618C78902BCE39E60033CD0D /* QuizView.swift */,
 				618C78922BCE3EA60033CD0D /* MenuView.swift */,
 				618C78802BCE2D650033CD0D /* Assets.xcassets */,
 				618C78822BCE2D650033CD0D /* Preview Content */,
-				618C789C2BD015C50033CD0D /* PointButtonModifier.swift */,
 			);
 			path = TossSwiftUI;
 			sourceTree = "<group>";

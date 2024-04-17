@@ -37,11 +37,7 @@ struct PointAgreeView: View {
                 
                 Spacer()
                 
-                HStack {
-                    Text("[선택]맞춤형 서비스 이용 동의")
-                    Spacer()
-                }
-                .padding(14)
+                AgreeMessageView(message: "[선택]맞춤형 서비스 이용 동의")
                 
                 CustomButtonView(title: "동의하기", backgroundColor: .blue)
                 CustomButtonView(title: "다음에 하기", backgroundColor: .black)
@@ -106,5 +102,16 @@ struct CustomButtonView: View {
         .background(backgroundColor)
         .asPointButton()
         
+    }
+}
+
+struct AgreeMessageView: View {
+    let message: String
+    var body: some View {
+        HStack {
+            Text(message)
+            Spacer()
+        }
+        .padding(14)
     }
 }
