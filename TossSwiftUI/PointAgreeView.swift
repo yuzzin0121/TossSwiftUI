@@ -14,41 +14,24 @@ struct PointAgreeView: View {
             VStack {
                 Spacer()
                     .frame(height: 50)
-                HStack(alignment: .top){
-                    Text("포인트를 더 모을 수 있게 맞춤 혜택을 추천해드릴까요?")
-                        .font(.title2).bold()
-                    Spacer()
-                }
-                .padding(14)
+                HeaderView()
                 
                 Spacer()
                     .frame(height: 30)
                 
                 VStack(spacing: 30) {
-                    HStack(spacing: 12) {
-                        Image(systemName: "calendar")
-                            .foregroundStyle(.blue)
-                            .font(.title2)
-                        Text("매일 포인트 받는 출석체크 • 퀴즈")
-                        Spacer()
-                    }
+                    DescriptionView(image: "calendar",
+                                    description: "매일 포인트 받는 출석체크 • 퀴즈",
+                                    imageColor: .blue)
                     
-                    HStack(spacing: 12) {
-                        Image(systemName: "pencil")
-                            .foregroundStyle(.red)
-                            .font(.title2)
+                    DescriptionView(image: "pencil", 
+                                    description: "새로운 이벤트", 
+                                    imageColor: .red)
+                    
+                    DescriptionView(image: "star.fill",
+                                    description: "미션 추천",
+                                    imageColor: .yellow)
 
-                        Text("새로운 이벤트")
-                        Spacer()
-                    }
-                    
-                    HStack(spacing: 12) {
-                        Image(systemName: "star.fill")
-                            .foregroundStyle(.yellow)
-                            .font(.title2)
-                        Text("미션 추천")
-                        Spacer()
-                    }
                 }
                 .padding(14)
                 
@@ -60,25 +43,10 @@ struct PointAgreeView: View {
                 }
                 .padding(14)
                 
-                Button {
-                    
-                } label: {
-                    Text("동의하기")
-                }
-                .frame(width: UIScreen.main.bounds.width - 40)
-                .padding(20)
-                .background(.blue)
-                .clipShape(.rect(cornerRadius: 12))
-                
-                Button {
-                    
-                } label: {
-                    Text("다음에 하기")
-                }
-                .padding(20)
-                .frame(width: UIScreen.main.bounds.width - 40)
-                .clipShape(.rect(cornerRadius: 12))
-
+                CustomButtonView(title: "동의하기", backgroundColor: .blue)
+                CustomButtonView(title: "다음에 하기", backgroundColor: .black)
+                Spacer()
+                    .frame(height: 20)
             }
             .foregroundStyle(.white)
             .padding(.top, 50)
@@ -94,4 +62,49 @@ struct PointAgreeView: View {
 
 #Preview {
     PointAgreeView()
+}
+
+struct HeaderView: View {
+    var body: some View {
+        HStack(alignment: .top){
+            Text("포인트를 더 모을 수 있게 맞춤 혜택을 추천해드릴까요?")
+                .font(.title2).bold()
+            Spacer()
+        }
+        .padding(14)
+    }
+}
+
+struct DescriptionView: View {
+    var image: String
+    var description: String
+    var imageColor: Color
+    
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: image)
+                .foregroundStyle(imageColor)
+                .font(.title2)
+            Text(description)
+            Spacer()
+        }
+    }
+}
+
+struct CustomButtonView: View {
+    let title: String
+    let backgroundColor: Color
+    
+    var body: some View {
+        Button {
+            
+        } label: {
+            Text(title)
+        }
+        .frame(width: UIScreen.main.bounds.width - 40)
+        .padding(20)
+        .background(backgroundColor)
+        .asPointButton()
+        
+    }
 }
