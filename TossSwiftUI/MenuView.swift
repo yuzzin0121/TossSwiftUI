@@ -14,59 +14,42 @@ struct MenuView: View {
                 .ignoresSafeArea()
             
             HStack(spacing: 12) {
-                Button(action: {}, label: {
-                    HStack {
-                        Spacer()
-                        VStack(spacing: 8) {
-                            Image(systemName: "bitcoinsign.circle.fill")
-                                .foregroundStyle(.blue)
-                            Text("토스뱅크")
-                        }
-                        Spacer()
-                    }
-                    
-                })
-                .frame(height: 110)
-                .background(.darkGray)
-                .clipShape(.rect(cornerRadius: 12))
-                
-                Button(action: {}, label: {
-                    HStack{
-                        Spacer()
-                        VStack(spacing: 8) {
-                            Image(systemName: "chart.line.uptrend.xyaxis")
-                                .foregroundStyle(.red)
-                            Text("토스증권")
-                        }
-                        Spacer()
-                    }
-                })
-                .frame(height: 110)
-                .background(.darkGray)
-                .clipShape(.rect(cornerRadius: 12))
-                
-                Button(action: {}, label: {
-                    HStack {
-                        Spacer()
-                        VStack(spacing: 8) {
-                            Image(systemName: "beats.headphones")
-                                .foregroundStyle(.blue)
-                            Text("고객센터")
-                        }
-                        Spacer()
-                    }
-                })
-                .frame(height: 110)
-                .background(.darkGray)
-                .clipShape(.rect(cornerRadius: 12))
+                MenuButtonView(image: "bitcoinsign.circle.fill",
+                               imageColor: .blue,
+                               title: "토스증권")
+                MenuButtonView(image: "chart.line.uptrend.xyaxis",
+                               imageColor: .red,
+                               title: "토스증권")
+                MenuButtonView(image: "beats.headphones",
+                               imageColor: .blue,
+                               title: "고객센터")
             }
-            .foregroundStyle(.white)
-            .font(.title3.bold())
-            
         }
     }
 }
 
 #Preview {
     MenuView()
+}
+
+struct MenuButtonView: View {
+    let image: String
+    let imageColor: Color
+    let title: String
+    
+    var body: some View {
+        Button(action: {}, label: {
+            HStack {
+                Spacer()
+                VStack(spacing: 8) {
+                    Image(systemName: image)
+                        .foregroundStyle(imageColor)
+                    Text(title)
+                }
+                Spacer()
+            }
+            
+        })
+        .asMenuButton()
+    }
 }

@@ -15,6 +15,7 @@
 		618C78912BCE39E60033CD0D /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C78902BCE39E60033CD0D /* QuizView.swift */; };
 		618C78932BCE3EA60033CD0D /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C78922BCE3EA60033CD0D /* MenuView.swift */; };
 		618C789D2BD015C50033CD0D /* PointButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C789C2BD015C50033CD0D /* PointButtonModifier.swift */; };
+		618C789F2BD01DF30033CD0D /* MenuButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618C789E2BD01DF30033CD0D /* MenuButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		618C78902BCE39E60033CD0D /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		618C78922BCE3EA60033CD0D /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		618C789C2BD015C50033CD0D /* PointButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointButtonModifier.swift; sourceTree = "<group>"; };
+		618C789E2BD01DF30033CD0D /* MenuButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				618C789C2BD015C50033CD0D /* PointButtonModifier.swift */,
 				618C788C2BCE2DAC0033CD0D /* PointAgreeView.swift */,
 				618C78902BCE39E60033CD0D /* QuizView.swift */,
+				618C789E2BD01DF30033CD0D /* MenuButtonModifier.swift */,
 				618C78922BCE3EA60033CD0D /* MenuView.swift */,
 				618C78802BCE2D650033CD0D /* Assets.xcassets */,
 				618C78822BCE2D650033CD0D /* Preview Content */,
@@ -155,6 +158,7 @@
 				618C789D2BD015C50033CD0D /* PointButtonModifier.swift in Sources */,
 				618C787F2BCE2D630033CD0D /* ContentView.swift in Sources */,
 				618C787D2BCE2D630033CD0D /* TossSwiftUIApp.swift in Sources */,
+				618C789F2BD01DF30033CD0D /* MenuButtonModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
